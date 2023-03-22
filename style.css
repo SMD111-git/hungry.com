@@ -1,0 +1,213 @@
+/**css reset*/
+*{
+    margin:0;
+    padding:0;
+}
+/*css variable*/
+:root{
+    --navbar-height:59px;
+}
+/*navgation bar*/
+#navbar{
+    display:flex;
+    align-items: center;
+}
+
+/* NAV BAR LOGO AND IMAGE*/
+.logo{
+    margin:30px,99px;
+    height:250px;
+    
+}
+
+/*LIST STYLING*/
+#navbar ul{
+    display:flex; 
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position:relative;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+    top:0px;
+    left:0px;
+      
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    
+}
+    
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+    margin: 50px;
+}
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding:3px,22px;
+    border-radius:20px;
+    text-decoration:none;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(241, 21, 21);
+    
+}
+/*home*/
+#home{
+    display: flex;
+    flex-direction:column;
+    padding:3px,200px;
+    height: 578px;
+    justify-content:center;
+    align-items: center;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+
+}
+#home h1:hover{
+    color:red;
+}
+#home p{
+    color:rgb(221, 14, 14);
+    
+    font: size 5.5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+.p{
+    text-align: center;
+}
+#home::before{
+    content: "";
+    background: url('../img/pexels-min-an-1482803.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    z-index:-1;
+    top:0px;
+    left:0px;
+    padding-bottom:10%;
+}
+
+/*ulitiy*/
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+    font-family: 'Permanent Marker', cursive;
+    color:rgb(247, 6, 6);
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding:12px;
+    font-family: 'Permanent Marker', cursive;
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:orange;
+    color:white;
+    margin:17px;
+    font-size:1.58rem;
+    border-radius:10px;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+footer{
+    background:black;
+    color:white;
+    padding:9px 20px;
+}
+
+/* serive center*/
+#services{
+    margin:34px;
+    display:flex;
+}
+.box{
+ border:2px solid brown;
+ padding:34px;
+ margin: 50px,6px;
+ border-radius:28px;
+ background-color:wheat;
+ margin-bottom: 20px;
+}
+#services .box img{
+ height: 186px;
+ padding-top:50px;
+ margin:auto;
+ display:block;
+}
+.services-container{
+    height:20%;
+    padding-top:5%;
+}
+/*clients section*/
+#client-section{
+   height:344px;
+  position: relative;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background:url("../bg5.jpg");
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+#client{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.client-item{
+    padding:34px;
+}
+#client img{
+    height:124px;
+}
+/*conact*/
+#conact{
+    position: relative;
+}
+#conact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background:url("../conact.jpg")no-repeat center center/cover;
+}
+#conact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:34px;
+}
+#conact-box input,
+#conact-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius:9px;
+    font-size: 1.1rem;
+}
+#conact-box form{
+    width:40%;
+}
+#conact-box label{
+     font-size:1.3rem;
+     font-family:'Permanent Marker', cursive;
+}
